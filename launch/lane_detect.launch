@@ -1,0 +1,9 @@
+<launch>
+  <node name="lane_detection" pkg="lidar_lane_detection" type="lane_detection" respawn="true" output="screen">
+    <remap from="/input" to="/os_cloud_node/points"/>
+  </node>
+
+  <arg name="rviz_config" default="$(find lidar_lane_detection)/lane.rviz"/>
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rviz_config)" required="true" />
+  
+</launch>
