@@ -26,7 +26,7 @@ Simple algorithm to detect the lane of road environment using 3D LiDAR <br/>
 Clone, build and run
 
 ~~~bash
-$ git https://github.com/bigbigpark/bisa_lane_detection.git
+$ git clone https://github.com/bigbigpark/LiDAR-LANE-DETECTION.git
 ~~~
 
 ~~~bash
